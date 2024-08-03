@@ -1,0 +1,150 @@
+{
+    "title": "test",
+    "steps": [
+        {
+            "type": "setViewport",
+            "width": 1365,
+            "height": 945,
+            "deviceScaleFactor": 1,
+            "isMobile": false,
+            "hasTouch": false,
+            "isLandscape": false
+        },
+        {
+            "type": "navigate",
+            "url": "https://www.google.com/",
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "https://www.google.com/",
+                    "title": "Google"
+                }
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Search"
+                ],
+                [
+                    "#APjFqb"
+                ],
+                [
+                    "xpath///*[@id=\"APjFqb\"]"
+                ],
+                [
+                    "pierce/#APjFqb"
+                ]
+            ],
+            "offsetY": 22,
+            "offsetX": 181.5
+        },
+        {
+            "type": "change",
+            "value": "hoohl",
+            "selectors": [
+                [
+                    "aria/Search"
+                ],
+                [
+                    "#APjFqb"
+                ],
+                [
+                    "xpath///*[@id=\"APjFqb\"]"
+                ],
+                [
+                    "pierce/#APjFqb"
+                ]
+            ],
+            "target": "main"
+        },
+        {
+            "type": "keyDown",
+            "target": "main",
+            "key": "Control"
+        },
+        {
+            "type": "keyDown",
+            "target": "main",
+            "key": "a"
+        },
+        {
+            "type": "keyUp",
+            "key": "Control",
+            "target": "main"
+        },
+        {
+            "type": "keyUp",
+            "key": "a",
+            "target": "main"
+        },
+        {
+            "type": "change",
+            "value": "google.com",
+            "selectors": [
+                [
+                    "aria/Search"
+                ],
+                [
+                    "#APjFqb"
+                ],
+                [
+                    "xpath///*[@id=\"APjFqb\"]"
+                ],
+                [
+                    "pierce/#APjFqb"
+                ]
+            ],
+            "target": "main"
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Sign in"
+                ],
+                [
+                    "div.gb_Ld > a"
+                ],
+                [
+                    "xpath///*[@id=\"gb\"]/div/div[2]/a"
+                ],
+                [
+                    "pierce/div.gb_Ld > a"
+                ]
+            ],
+            "offsetY": 34,
+            "offsetX": 40,
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.com%2F&ec=GAZAmgQ&hl=en&ifkv=AdF4I74AZp10wnncnWxqq4WmnY9oh67Mpi-pbuq6yV1d9aB0eCdAadXtqQxj1cwHz2gl6irDfOd0XQ&passive=true&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-1190581254%3A1722698101616720&ddm=0",
+                    "title": ""
+                }
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "div.TNTaPb span"
+                ],
+                [
+                    "xpath///*[@id=\"identifierNext\"]/div/button/span"
+                ],
+                [
+                    "pierce/div.TNTaPb span"
+                ],
+                [
+                    "text/Next"
+                ]
+            ],
+            "offsetY": 9.5,
+            "offsetX": 2.734375
+        }
+    ]
+}
