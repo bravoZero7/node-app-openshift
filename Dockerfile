@@ -10,12 +10,7 @@ RUN npm install --verbose
 
 COPY . /app
 
-
-WORKDIR /.cache/Cypress/
-
-RUN ls
-
-WORKDIR /app
+RUN echo $(ls -1 /.cache/Cypress/)
 
 EXPOSE 3001
 
