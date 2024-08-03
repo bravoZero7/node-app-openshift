@@ -1,5 +1,7 @@
 FROM node:alpine3.10
 
+ENV NODE_VERSION 18.20.4
+
 RUN mkdir /app
 
 WORKDIR /app
