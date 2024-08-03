@@ -1,6 +1,4 @@
-FROM node:alpine3.10
-
-ENV NODE_VERSION 18.20.4
+FROM node:18-alpine
 
 RUN mkdir /app
 
