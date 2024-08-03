@@ -8,6 +8,8 @@ COPY package.json /app
 
 RUN npm install --verbose
 
+RUN node_modules/cypress node index.js --exec install --force true
+
 COPY . /app
 
 RUN echo $(ls -1 /.cache/Cypress/)
