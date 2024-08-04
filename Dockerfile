@@ -14,6 +14,8 @@ RUN node_modules/cypress node index.js --exec install --force true
 
 COPY . /app
 
+RUN npm run verify
+
 RUN echo $(ls -1 /.cache/Cypress/)
 
 EXPOSE 3001

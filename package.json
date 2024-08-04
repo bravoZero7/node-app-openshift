@@ -4,7 +4,8 @@
   "description": "Node js application and deploy using openshift",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress run --headless"
+    "test": "cypress run --headless",
+    "r": "cypress verify"
   },
   "author": "",
   "license": "ISC",
