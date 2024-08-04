@@ -8,10 +8,6 @@ COPY package.json /app
 
 RUN npm install --verbose
 
-RUN chmod 777 -R node_modules
-
-RUN node_modules/cypress node index.js --exec install --force true
-
 COPY . /app
 
 RUN npm run verify
