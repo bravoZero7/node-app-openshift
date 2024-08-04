@@ -12,6 +12,8 @@ RUN apk add xvfb
 
 COPY . /app
 
+RUN chmod 777 -R /app
+
 RUN npm run verify
 
 RUN echo $(ls -1 /.cache/Cypress/)
